@@ -1,129 +1,122 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-    <head>
-        <!-- Meta Tags -->
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="keywords" content="Site keywords here">
-		<meta name="description" content="">
-		<meta name='copyright' content=''>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<!-- Title -->
-        <title>PAFHRMC</title>
-		
-		<!-- Favicon -->
-        <link rel="icon" href="img/favicon.png">
-		
-		<!-- Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 | Radar Lost Contact</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0b0f0c;
+      color: #00ff88;
+      font-family: 'Consolas', monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      text-align: center;
+    }
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- Nice Select CSS -->
-		<link rel="stylesheet" href="css/nice-select.css">
-		<!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-		<!-- icofont CSS -->
-        <link rel="stylesheet" href="css/icofont.css">
-		<!-- Slicknav -->
-		<link rel="stylesheet" href="css/slicknav.min.css">
-		<!-- Owl Carousel CSS -->
-        <link rel="stylesheet" href="css/owl-carousel.css">
-		<!-- Datepicker CSS -->
-		<link rel="stylesheet" href="css/datepicker.css">
-		<!-- Animate CSS -->
-        <link rel="stylesheet" href="css/animate.min.css">
-		<!-- Magnific Popup CSS -->
-        <link rel="stylesheet" href="css/magnific-popup.css">
-		
-		<!-- Medipro CSS -->
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-		
-    </head>
-    <body>
-	
-		<!-- Preloader -->
-        <div class="preloader">
-            <div class="loader">
-                <div class="loader-outter"></div>
-                <div class="loader-inner"></div>
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.2em;
+    }
 
-                <div class="indicator"> 
-                    <svg width="16px" height="12px">
-                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
-                    </svg>
-                </div>
-            </div>
-        </div>
-        <!-- End Preloader -->
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-bottom: 1em;
+      color: #ffff;
+    }
 
-	
-		</header>
-		<!-- End Header Area -->
-		
-		<!-- Error Page -->
-		<section class="error-page section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 offset-lg-3 col-12">
-						<!-- Error Inner -->
-						<div class="error-inner">
-							<h1>404<span>Oop's  sorry we can't find that page!</span></h1>
-							<p>The Application is not yet integrated to 950</p>
+    .radar-container {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border: 2px solid #00ff88;
+      border-radius: 50%;
+      margin: 20px auto;
+      background: radial-gradient(circle at center, #003300 0%, #000000 80%);
+      overflow: hidden;
+    }
 
-						</div>
-						<!--/ End Error Inner -->
-					</div>
-				</div>
-			</div>
-		</section>	
-		<!--/ End Error Page -->
-		
-		<!--/ End Footer Area -->
-		
-		<!-- jquery Min JS -->
-        <script src="js/jquery.min.js"></script>
-		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
-		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- Easing JS -->
-        <script src="js/easing.js"></script>
-		<!-- Color JS -->
-		<script src="js/colors.js"></script>
-		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
-		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
-		<!-- Jquery Nav JS -->
-        <script src="js/jquery.nav.js"></script>
-		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
-		<!-- ScrollUp JS -->
-        <script src="js/jquery.scrollUp.min.js"></script>
-		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
-		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
-		<!-- Owl Carousel JS -->
-        <script src="js/owl-carousel.js"></script>
-		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
-		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
-		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
-		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Counter Up CDN JS -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
-    </body>
+    .sweep-arm {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-origin: center;
+      animation: rotate 2s linear infinite;
+    }
+
+    .sweep-arm::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 2px;
+      height: 125px;
+      background: rgba(0, 255, 136, 0.3);
+      transform: rotate(0deg) translateY(-100%);
+      transform-origin: bottom center;
+    }
+
+    .blip {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: #00ff88;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: blink 2s infinite;
+    }
+
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+
+    a.btn {
+      margin-top: 1.5em;
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #005f33;
+      color: #00ff88;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #00ff88;
+      transition: background-color 0.3s ease;
+    }
+
+    a.btn:hover {
+      background-color: #008855;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="radar-container">
+    <div class="sweep-arm"></div>
+    <!-- Randomly placed blips -->
+    <div class="blip" style="top: 30px; left: 80px;"></div>
+    <div class="blip" style="top: 150px; left: 170px;"></div>
+    <div class="blip" style="top: 90px; left: 190px;"></div>
+    <div class="blip" style="top: 200px; left: 40px;"></div>
+    <div class="blip" style="top: 110px; left: 120px;"></div>
+  </div>
+
+  <h1>404 - Flight Path Lost</h1>
+  <h2>The page you're looking for is under maintenance.</h2>
+ <a class="btn" href="javascript:history.back()">Return to Base</a>
+
+</body>
 </html>
+
+
