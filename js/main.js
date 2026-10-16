@@ -411,8 +411,9 @@ const redirectBtn = document.getElementById("redirectBtn");
         // Add a click event listener to the button
         redirectBtn.addEventListener("click", () => {
             // Redirect to the specified URL
-            window.location.href = "404.html"; // The target URL
-        });
+            // window.location.href = "www.jointhepaf.airforce.mil.ph"; // The target URL
+			window.open("https://jointhepaf.airforce.mil.ph/", "_blank");
+		});
 
 
 const redirectBtnEP = document.getElementById("redirectBtnEP");
@@ -420,6 +421,8 @@ const redirectBtnEP = document.getElementById("redirectBtnEP");
         // Add a click event listener to the button
         redirectBtnEP.addEventListener("click", () => {
             // Redirect to the specified URL
-            window.location.href = "404.html"; // The target URL
+            // window.location.href = "404.html"; // The target URL
+            // window.location.href = "www.jointhepaf.airforce.mil.ph"; // The target URL
+			window.open("https://jointhepaf.airforce.mil.ph/", "_blank");
         });
 
